@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Clean  Pool Services - Professional Pool Maintenance</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4842f5;
+            --primary-light: #6964f7;
+            --light-gray: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: rgb(81, 81, 144) !important;
+        }
+
+        .nav-link {
+            font-weight: 500;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-light);
+            border-color: var(--primary-light);
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/images/1.png') center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        .section-heading {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+
+        .feature-card {
+            padding: 2rem;
+            border-radius: 15px;
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-preview {
+            background-color: var(--light-gray);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .service-preview:hover {
+            transform: translateY(-5px);
+        }
+
+        .testimonial-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 1rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .process-step {
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .process-step::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -50px;
+            width: 100px;
+            height: 2px;
+            background-color: var(--primary-color);
+            display: none;
+        }
+
+        @media (min-width: 768px) {
+            .process-step::after {
+                display: block;
+            }
+            
+            .process-step:last-child::after {
+                display: none;
+            }
+        }
+
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-weight: bold;
+        }
+
+        .rating-stars {
+            color: gold;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/api/placeholder/1920/600') center/cover;
+            color: white;
+            padding: 6rem 0;
+        }
+
+        .benefit-card {
+            text-align: center;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-10px);
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.php">Blue Clean Pool</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <header class="py-5 bg-light">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold section-heading">Get In Touch</h1>
+            <p class="lead">We're here to answer any questions about our pool services</p>
+        </div>
+    </header>
+
+    <!-- Contact Information Cards -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-md-4">
+                    <div class="contact-info-card text-center">
+                        <i class="bi bi-geo-alt-fill contact-icon"></i>
+                        <h4>Visit Us</h4>
+                        <p class="mb-0">970 Treat Ave,
+                        </p>
+                        <p class="mb-0">San Francisco, CA 94110, USA</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-info-card text-center">
+                        <i class="bi bi-telephone-fill contact-icon"></i>
+                        <h4>Call Us</h4>
+                        <p class="mb-0">Phone: +1 4152401281
+                        </p>
+                        <!-- <p class="mb-0">Emergency: (555) 987-6543</p> -->
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-info-card text-center">
+                        <i class="bi bi-clock-fill contact-icon"></i>
+                        <h4>Business Hours</h4>
+                        <p class="mb-0">Monday - Friday: 8:00 AM - 6:00 PM</p>
+                        <p class="mb-0">Saturday: 9:00 AM - 4:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form and Map -->
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="contact-form">
+                        <h3 class="section-heading">Send Us a Message</h3>
+                        <form id="contactForm" onsubmit="return validateForm(event)">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Full Name *</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number *</label>
+                                <input type="tel" class="form-control" id="phone" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="service" class="form-label">Service Interested In</label>
+                                <select class="form-select" id="service">
+                                    <option value="">Select a service...</option>
+                                    <option value="maintenance">Regular Maintenance</option>
+                                    <option value="repair">Equipment Repair</option>
+                                    <option value="renovation">Pool Renovation</option>
+                                    <option value="chemical">Chemical Treatment</option>
+                                    <option value="other">Other Services</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea class="form-control" id="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="h-100">
+                        <h3 class="section-heading">Find Us</h3>
+                        <!-- Placeholder for map -->
+                        <div class="contact-map">
+                            <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.4197016310663!2d-122.413519!3d37.75482999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e47f7e419c5%3A0x204bfcdbb5dde520!2s970%20Treat%20Ave%2C%20San%20Francisco%2C%20CA%2094110%2C%20USA!5e1!3m2!1sen!2sin!4v1737090288927!5m2!1sen!2sin"
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe></div>             
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer -->
+     <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="mb-4">Blue Clean Pool</h5>
+                    <p>Professional pool maintenance services committed to keeping your pool pristine and safe all year round.</p>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-light text-decoration-none mb-2 d-block">About Us</a></li>
+                        <li><a href="services.html" class="text-light text-decoration-none mb-2 d-block">Services</a></li>
+                        <li><a href="contact.html" class="text-light text-decoration-none mb-2 d-block">Contact</a></li>
+                        <li><a href="privacy-policy.html" class="text-light text-decoration-none mb-2 d-block">Privacy-policy</a></li>
+<li><a href="terms-and-condiction.html" class="text-light text-decoration-none mb-2 d-block">Terms & Condictions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-4">Contact Info</h5>
+                    <p><i class="bi bi-geo-alt-fill me-2"></i> 970 Treat Ave,
+
+San Francisco, CA 94110, USA</p>
+                    <p><i class="bi bi-telephone-fill me-2"></i>+1 4152401281</p>
+                    <p><i class="bi bi-envelope-fill me-2"></i> info@bluecleanpool.com</p>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-4">Business Hours</h5>
+                    <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                    <p>Saturday: 9:00 AM - 4:00 PM</p>
+                    <p>Sunday: Closed</p>
+                    <p class="text-warning">24/7 Emergency Service Available</p>
+                </div>
+            </div>
+            <div class="border-top border-secondary mt-4 pt-4 text-center">
+                <p>&copy; 2025 Blue Clean Pool. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>

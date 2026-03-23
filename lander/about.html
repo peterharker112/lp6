@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blue Clean Pool Services - About Us</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary-color: #4842f5;
+        --primary-light: #6964f7;
+        --light-gray: #f8f9fa;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        padding-top: 76px;
+      }
+
+      .navbar {
+        background-color: white;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar-brand {
+        font-weight: 700;
+        color:  rgb(81, 81, 144)  !important;
+      }
+
+      .nav-link {
+        font-weight: 500;
+      }
+
+      .btn-primary {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+      }
+
+      .btn-primary:hover {
+        background-color: var(--primary-light);
+        border-color: var(--primary-light);
+      }
+
+      .section-heading {
+        color: var(--primary-color);
+        font-weight: 700;
+        margin-bottom: 2rem;
+      }
+
+      .about-header {
+        background-image: url("./assets/images/2.png"); /* Replace with the actual image URL */
+        background-size: cover; /* Ensures the image covers the entire header */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents image tiling */
+        color: white; /* Ensures text color is visible */
+        padding: 150px 0; /* Adds vertical spacing */
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); /* Adds a subtle shadow to text for readability */
+      }
+
+      .timeline-item {
+        padding: 2rem;
+        border-left: 3px solid var(--primary-color);
+        margin-bottom: 2rem;
+        position: relative;
+        background-color: var(--light-gray);
+        border-radius: 0 15px 15px 0;
+      }
+
+      .timeline-item::before {
+        content: "";
+        position: absolute;
+        left: -10px;
+        top: 2rem;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: var(--primary-color);
+      }
+
+      .team-member {
+        text-align: center;
+        margin-bottom: 2rem;
+        position: relative;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .team-member img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+      }
+
+      .team-info {
+        padding: 1.5rem;
+        background-color: white;
+      }
+
+      .value-card {
+        text-align: center;
+        padding: 2rem;
+        border-radius: 15px;
+        background-color: white;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        height: 100%;
+        transition: transform 0.3s ease;
+      }
+
+      .value-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .culture-card {
+        padding: 2rem;
+        border-radius: 15px;
+        background-color: var(--light-gray);
+        height: 100%;
+        transition: transform 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.php">Blue Clean Pool</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.php">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- About Header -->
+    <header class="about-header text-white">
+      <div class="container text-center">
+        <h1 class="display-4 fw-bold">Our Story</h1>
+        <p class="lead">
+          Building a legacy of excellence in pool care since 2010
+        </p>
+      </div>
+    </header>
+
+    <!-- Main Story Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <p class="lead text-center">
+              At Blue Pool Clean, we provide three customized swimming pool and
+              spa cleaning and maintenance options designed for residential
+              customers. Our experienced, uniformed pool technicians ensure
+              professional service every time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Premium Weekly Service Section -->
+    <section class="premium-service bg-light py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <h2 class="text-center section-heading mb-5">
+              Premium Weekly Swimming Pool and Spa Service
+            </h2>
+            <p class="lead text-center mb-4">
+              Enjoy comprehensive pool and spa care with our weekly service.
+              Unlike "Every Other Week" plans offered by others, we ensure your
+              pool receives full attention every single week, keeping it ready
+              for any occasion—be it a party or unexpected weather.
+            </p>
+            <div class="row">
+              <div class="col-md-6">
+                <h4 class="fw-bold">Service Includes:</h4>
+                <ul class="list-unstyled">
+                  <li>✔ Chemical testing and adjustments</li>
+                  <li>✔ Pool surface skimming</li>
+                  <li>✔ Thorough vacuuming</li>
+                  <li>✔ Emptying pool and pump baskets</li>
+                  <li>✔ Water level checks</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="list-unstyled mt-md-4 mt-0">
+                  <li>✔ Wall brushing</li>
+                  <li>✔ Tile cleaning</li>
+                  <li>✔ Cartridge filter cleaning or backwashing</li>
+                  <li>✔ Equipment inspection</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center section-heading mb-5">Our Core Values</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="value-card">
+              <i class="bi bi-star-fill text-primary display-4 mb-3"></i>
+              <h4>Excellence</h4>
+              <p>Relentless perfection, powered by innovation.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="value-card">
+              <i class="bi bi-heart-fill text-primary display-4 mb-3"></i>
+              <h4>Customer Focus</h4>
+              <p>Your satisfaction isn’t just a goal—it’s our compass</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="value-card">
+              <i class="bi bi-shield-check text-primary display-4 mb-3"></i>
+              <h4>Integrity</h4>
+              <p>
+                Transparent advice and pricing form the backbone of every
+                service we provide.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership Team -->
+    <!-- <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center section-heading mb-5">Our Leadership Team</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img src="/api/placeholder/400/400" alt="Michael Thompson">
+                        <div class="team-info">
+                            <h4>Michael Thompson</h4>
+                            <p class="text-primary mb-2">Founder & CEO</p>
+                            <p>25+ years of pool industry experience, leading our company's vision and growth.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img src="/api/placeholder/400/400" alt="Sarah Martinez">
+                        <div class="team-info">
+                            <h4>Sarah Martinez</h4>
+                            <p class="text-primary mb-2">Operations Director</p>
+                            <p>Expert in service optimization and team management with 15+ years experience.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-member">
+                        <img src="/api/placeholder/400/400" alt="David Chen">
+                        <div class="team-info">
+                            <h4>David Chen</h4>
+                            <p class="text-primary mb-2">Technical Director</p>
+                            <p>Master pool systems specialist leading our technical innovations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Company Culture -->
+    <!-- <section class="py-5">
+        <div class="container">
+            <h2 class="text-center section-heading mb-5">Our Culture</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="culture-card">
+                        <h4><i class="bi bi-people-fill text-primary me-2"></i> Team First</h4>
+                        <p>We foster a collaborative environment where every team member's input is valued and respected.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="culture-card">
+                        <h4><i class="bi bi-lightbulb-fill text-primary me-2"></i> Innovation</h4>
+                        <p>We encourage creative thinking and embrace new technologies to improve our services.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="culture-card">
+                        <h4><i class="bi bi-book-fill text-primary me-2"></i> Continuous Learning</h4>
+                        <p>Regular training and development opportunities help our team stay ahead of industry trends.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="culture-card">
+                        <h4><i class="bi bi-heart-fill text-primary me-2"></i> Community Focus</h4>
+                        <p>We actively participate in local community events and support various charitable initiatives.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Stats Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center section-heading mb-5">Our Impact</h2>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="stats-card">
+              <div class="stats-number">5000+</div>
+              <h5>Happy Clients</h5>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="stats-card">
+              <div class="stats-number">25+</div>
+              <h5>Expert Staff</h5>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="stats-card">
+              <div class="stats-number">98%</div>
+              <h5>Client Satisfaction</h5>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="stats-card">
+              <div class="stats-number">98%</div>
+              <h5>Client Satisfaction</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology & Innovation -->
+    <!-- <section class="py-5">
+        <div class="container">
+            <h2 class="text-center section-heading mb-5">Our Technology</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="tech-item">
+                        <i class="bi bi-tablet display-4 text-primary mb-3"></i>
+                        <h4>Digital Water Testing</h4>
+                        <p>Advanced digital testing equipment for precise water chemistry analysis</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="tech-item">
+                        <i class="bi bi-phone display-4 text-primary mb-3"></i>
+                        <h4>Mobile Updates</h4>
+                        <p>Real-time service updates and reports through our mobile app</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="tech-item">
+                        <i class="bi bi-graph-up display-4 text-primary mb-3"></i>
+                        <h4>Smart Monitoring</h4>
+                        <p>Automated pool monitoring systems for optimal maintenance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Community Impact -->
+    <!-- <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center section-heading mb-5">Community Impact</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="/api/placeholder/600/400" alt="Community Events" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-6">
+                    <h3>Giving Back to Our Community</h3>
+                    <p class="lead">We believe in making a positive impact beyond pool maintenance.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                            Annual pool safety workshops for families
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                            Support for local youth sports programs
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                            Environmental conservation initiatives
+                        </li>
+                        <li class="mb-3">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i>
+                            Partnerships with local schools for education
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Awards Section -->
+    <!-- <section class="py-5">
+        <div class="container">
+            <h2 class="text-center section-heading mb-5">Recognition & Awards</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-3 text-center">
+                    <div class="award-badge">
+                        <i class="bi bi-trophy text-primary display-4"></i>
+                    </div>
+                    <h5>Best Service Provider 2024</h5>
+                    <p>Local Business Excellence</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="award-badge">
+                        <i class="bi bi-award text-primary display-4"></i>
+                    </div>
+                    <h5>Customer Choice Award</h5>
+                    <p>5 Years Running</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="award-badge">
+                        <i class="bi bi-star text-primary display-4"></i>
+                    </div>
+                    <h5>Industry Leadership</h5>
+                    <p>Innovation in Pool Care</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Careers Call to Action -->
+    <!-- <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="section-heading">Join Our Team</h2>
+            <p class="lead mb-4">We're always looking for talented individuals who share our passion for excellence</p>
+            <a href="contact.html" class="btn btn-primary btn-lg">View Career Opportunities</a>
+        </div>
+    </section> -->
+
+    <!-- Why Choose LA Pool Services Section -->
+    <section class="why-choose-us py-5">
+      <div class="container">
+        <h2 class="text-center section-heading mb-5">
+          Why Choose LA Pool Services?
+        </h2>
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="list-unstyled">
+              <li>
+                <strong>✔ Reliable Weekly Visits:</strong> Service by skilled,
+                certified technicians.
+              </li>
+              <li>
+                <strong>✔ All-Inclusive Pricing:</strong> Pool and spa chemicals
+                included—no hidden costs.
+              </li>
+              <li>
+                <strong>✔ Convenient Billing:</strong> Monthly invoices sent in
+                arrears.
+              </li>
+              <li>
+                <strong>✔ No Extra Call-Out Fees:</strong> Routine problems are
+                handled without extra charges.
+              </li>
+              <li>
+                <strong>✔ 7-Day Customer Support:</strong> Phones answered every
+                day for your convenience.
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-unstyled">
+              <li><strong>✔ Emergency Assistance:</strong></li>
+              <ul class="ps-4">
+                <li>Response within 24 hours for emergencies.</li>
+                <li>
+                  Weekend emergencies handled (additional charges may apply).
+                </li>
+                <li>Standard call-outs addressed within 48 hours.</li>
+              </ul>
+              <li>
+                <strong>✔ No Contracts:</strong> Flexible, no long-term
+                commitments.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-center mt-4">
+          We handle your pool and spa maintenance, so you can enjoy a clean,
+          safe, and sparkling pool year-round.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="mb-4">Blue Clean Pool</h5>
+                    <p>Professional pool maintenance services committed to keeping your pool pristine and safe all year round.</p>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-light text-decoration-none mb-2 d-block">About Us</a></li>
+                        <li><a href="services.html" class="text-light text-decoration-none mb-2 d-block">Services</a></li>
+                        <li><a href="contact.html" class="text-light text-decoration-none mb-2 d-block">Contact</a></li>
+                        <li><a href="privacy-policy.html" class="text-light text-decoration-none mb-2 d-block">Privacy-policy</a></li>
+<li><a href="terms-and-condiction.html" class="text-light text-decoration-none mb-2 d-block">Terms & Condictions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-4">Contact Info</h5>
+                    <p><i class="bi bi-geo-alt-fill me-2"></i> 970 Treat Ave,
+
+San Francisco, CA 94110, USA</p>
+                    <p><i class="bi bi-telephone-fill me-2"></i>+1 4152401281</p>
+                    <p><i class="bi bi-envelope-fill me-2"></i> info@bluecleanpool.com</p>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-4">Business Hours</h5>
+                    <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                    <p>Saturday: 9:00 AM - 4:00 PM</p>
+                    <p>Sunday: Closed</p>
+                    <p class="text-warning">24/7 Emergency Service Available</p>
+                </div>
+            </div>
+            <div class="border-top border-secondary mt-4 pt-4 text-center">
+                <p>&copy; 2025 Blue Clean Pool. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
